@@ -7,7 +7,7 @@
     7.2rem,
     50vw,
     28.8rem
-  ); /* Base size scales between 0.5rem and 100rem based on viewport width */
+  ); /* Base size scales based on viewport width. 1152px = 72rem */
 
   /* Harmonic intervals */
   --unison-size: calc(var(--base-size) * 1); /* 1/1 */
