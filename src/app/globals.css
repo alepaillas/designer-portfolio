@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --base-size: clamp(
+    7.2rem,
+    50vw,
+    28.8rem
+  ); /* Base size scales between 0.5rem and 100rem based on viewport width */
+
+  /* Harmonic intervals */
+  --unison-size: calc(var(--base-size) * 1); /* 1/1 */
+  --minor-second-size: calc(var(--base-size) * 1.067); /* 16/15 */
+  --major-second-size: calc(var(--base-size) * 1.125); /* 9/8 */
+  --minor-third-size: calc(var(--base-size) * 1.2); /* 6/5 */
+  --major-third-size: calc(var(--base-size) * 1.25); /* 5/4 */
+  --perfect-fourth-size: calc(var(--base-size) * 1.333); /* 4/3 */
+  --tritone-size: calc(var(--base-size) * 1.406); /* 45/32 */
+  --perfect-fifth-size: calc(var(--base-size) * 1.5); /* 3/2 */
+  --minor-sixth-size: calc(var(--base-size) * 1.6); /* 8/5 */
+  --major-sixth-size: calc(var(--base-size) * 1.667); /* 5/3 */
+  --minor-seventh-size: calc(var(--base-size) * 1.8); /* 9/5 */
+  --major-seventh-size: calc(var(--base-size) * 1.875); /* 15/8 */
+  --octave-size: calc(var(--base-size) * 2); /* 2/1 */
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+body {
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Height classes */
+.h-unison {
+  height: var(--unison-size);
+}
+
+.h-minor-second {
+  height: var(--minor-second-size);
+}
+
+.h-major-second {
+  height: var(--major-second-size);
+}
+
+.h-minor-third {
+  height: var(--minor-third-size);
+}
+
+.h-major-third {
+  height: var(--major-third-size);
+}
+
+.h-perfect-fourth {
+  height: var(--perfect-fourth-size);
+}
+
+.h-tritone {
+  height: var(--tritone-size);
+}
+
+.h-perfect-fifth {
+  height: var(--perfect-fifth-size);
+}
+
+.h-minor-sixth {
+  height: var(--minor-sixth-size);
+}
+
+.h-major-sixth {
+  height: var(--major-sixth-size);
+}
+
+.h-minor-seventh {
+  height: var(--minor-seventh-size);
+}
+
+.h-major-seventh {
+  height: var(--major-seventh-size);
+}
+
+.h-octave {
+  height: var(--octave-size);
+}
+
+/* Width classes */
+.w-unison {
+  width: var(--unison-size);
+}
+
+.w-minor-second {
+  width: var(--minor-second-size);
+}
+
+.w-major-second {
+  width: var(--major-second-size);
+}
+
+.w-minor-third {
+  width: var(--minor-third-size);
+}
+
+.w-major-third {
+  width: var(--major-third-size);
+}
+
+.w-perfect-fourth {
+  width: var(--perfect-fourth-size);
+}
+
+.w-tritone {
+  width: var(--tritone-size);
+}
+
+.w-perfect-fifth {
+  width: var(--perfect-fifth-size);
+}
+
+.w-minor-sixth {
+  width: var(--minor-sixth-size);
+}
+
+.w-major-sixth {
+  width: var(--major-sixth-size);
+}
+
+.w-minor-seventh {
+  width: var(--minor-seventh-size);
+}
+
+.w-major-seventh {
+  width: var(--major-seventh-size);
+}
+
+.w-octave {
+  width: var(--octave-size);
+}
